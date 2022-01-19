@@ -5,6 +5,6 @@ export class PaymentEntity extends BaseEntity {
   id: number;
   @Column()
   name: string;
-  @Column()
+  @Column({ default: false })
   isPay: boolean;
 }
